@@ -22,7 +22,6 @@ D:\hyena_FTP\bin\Debug\netcoreapp3.1\FTP.runtimeconfig.dev.json
 D:\hyena_FTP\bin\Debug\netcoreapp3.1\FTP.dll
 D:\hyena_FTP\bin\Debug\netcoreapp3.1\FTP.pdb
 D:\hyena_FTP\bin\Debug\netcoreapp3.1\FluentFTP.dll
-D:\hyena_FTP\obj\Debug\netcoreapp3.1\FTP.csprojAssemblyReference.cache
 D:\hyena_FTP\obj\Debug\netcoreapp3.1\FTP.HyenaFTP.resources
 D:\hyena_FTP\obj\Debug\netcoreapp3.1\FTP.csproj.GenerateResource.cache
 D:\hyena_FTP\obj\Debug\netcoreapp3.1\FTP.AssemblyInfoInputs.cache
