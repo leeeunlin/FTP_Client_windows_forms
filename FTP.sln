@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FTP", "FTP.csproj", "{85864478-5712-450F-954F-DFB10ED3AB09}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Hyena_FTP_Modul", "Hyena_FTP_Modul\Hyena_FTP_Modul.vdproj", "{50BDDE7B-BE30-45D7-8FF4-468839DAB837}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Hyena_FTP_Module", "Hyena_FTP_Modul\Hyena_FTP_Modul.vdproj", "{50BDDE7B-BE30-45D7-8FF4-468839DAB837}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

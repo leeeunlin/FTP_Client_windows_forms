@@ -38,7 +38,7 @@ namespace FTP
 
                 });
 
-                ftp.UploadDirectory(folderPath, @"\", FtpFolderSyncMode.Update, FtpRemoteExists.Skip, FtpVerify.None, null, pro);
+                ftp.UploadDirectory(folderPath, @"\" + txtUserName.Text, FtpFolderSyncMode.Update, FtpRemoteExists.Skip, FtpVerify.None, null, pro);
 
             }
         }
@@ -78,6 +78,11 @@ namespace FTP
         private void btnUpload_Click(object sender, EventArgs e)
         {
             backgroundWorker.RunWorkerAsync();
+        }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:Hyena_FTP_Modul"
+"ProjectName" = "8:Hyena_FTP_Module"
 "LanguageId" = "3:1042"
 "CodePage" = "3:949"
 "UILanguageId" = "3:1042"
@@ -139,9 +139,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Hyena FTP Modul"
+        "ProductName" = "8:Hyena FTP Module"
         "ProductCode" = "8:{BE40AAEF-AD0E-4F81-889E-D21A0B3FCB0F}"
-        "PackageCode" = "8:{457BCF9E-51DA-4553-903B-551AD927CFCD}"
+        "PackageCode" = "8:{F6343A49-8C48-4BCE-9ECE-242BA1FDCC24}"
         "UpgradeCode" = "8:{07296309-7FA4-464A-B515-DC3ECD9F5B8D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -152,7 +152,7 @@
         "Manufacturer" = "8:HMCompany"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Hyena_FTP_Modul"
+        "Title" = "8:Hyena FTP Module"
         "Subject" = "8:"
         "ARPCONTACT" = "8:HMCompany"
         "Keywords" = "8:"
@@ -333,20 +333,6 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_566026C62CC44A86AE88721DD9A8CF61"
-            {
-            "Name" = "8:Shortcut to 게시 항목 from FTP (Active)"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_AF39960FC35A45B89D7991354F475998"
-            "Folder" = "8:_16601EC3B4794DC29F6015C04FA13D3F"
-            "WorkingFolder" = "8:_04F2C19ADC96443CA98ECB5E24328895"
-            "Icon" = "8:"
-            "Feature" = "8:"
-            }
         }
         "UserInterface"
         {

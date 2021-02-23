@@ -31,3 +31,4 @@ D:\hyena_FTP\obj\Debug\netcoreapp3.1\FTP.csproj.CopyComplete
 D:\hyena_FTP\obj\Debug\netcoreapp3.1\FTP.dll
 D:\hyena_FTP\obj\Debug\netcoreapp3.1\FTP.pdb
 D:\hyena_FTP\obj\Debug\netcoreapp3.1\FTP.genruntimeconfig.cache
+D:\hyena_FTP\obj\Debug\netcoreapp3.1\FTP.csprojAssemblyReference.cache

@@ -92,7 +92,8 @@ namespace FTP
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(256, 23);
             this.txtUserName.TabIndex = 2;
-            this.txtUserName.Text = "test1";
+            this.txtUserName.Text = "";
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // txtPassword
             // 
@@ -101,7 +102,7 @@ namespace FTP
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(256, 23);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "1234";
+            this.txtPassword.Text = "";
             // 
             // label3
             // 
