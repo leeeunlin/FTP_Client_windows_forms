@@ -54,11 +54,11 @@ namespace FTP
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(87, 44);
+            this.label1.Location = new System.Drawing.Point(94, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 15);
+            this.label1.Size = new System.Drawing.Size(38, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Server :";
+            this.label1.Text = "서버 :";
             // 
             // txtServer
             // 
@@ -67,15 +67,15 @@ namespace FTP
             this.txtServer.ReadOnly = true;
             this.txtServer.Size = new System.Drawing.Size(256, 23);
             this.txtServer.TabIndex = 1;
-            this.txtServer.Text = "192.10.10.227";
+            this.txtServer.Text = "Hyena FTP Server";
             // 
             // selectPath
             // 
-            this.selectPath.Location = new System.Drawing.Point(407, 151);
+            this.selectPath.Location = new System.Drawing.Point(407, 155);
             this.selectPath.Name = "selectPath";
-            this.selectPath.Size = new System.Drawing.Size(75, 23);
+            this.selectPath.Size = new System.Drawing.Size(91, 23);
             this.selectPath.TabIndex = 4;
-            this.selectPath.Text = "Select Path";
+            this.selectPath.Text = "경로선택...";
             this.selectPath.UseVisualStyleBackColor = true;
             this.selectPath.Click += new System.EventHandler(this.selectPath_Click);
             // 
@@ -92,7 +92,6 @@ namespace FTP
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(256, 23);
             this.txtUserName.TabIndex = 2;
-            this.txtUserName.Text = "";
             this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // txtPassword
@@ -102,16 +101,15 @@ namespace FTP
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(256, 23);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(70, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.Size = new System.Drawing.Size(62, 15);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Password :";
+            this.label3.Text = "비밀번호 :";
             // 
             // backgroundWorker
             // 
@@ -133,11 +131,11 @@ namespace FTP
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 80);
+            this.label2.Location = new System.Drawing.Point(22, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 15);
+            this.label2.Size = new System.Drawing.Size(110, 15);
             this.label2.TabIndex = 8;
-            this.label2.Text = "User Name :";
+            this.label2.Text = "E-mail (Hyena ID) :";
             // 
             // txtPath
             // 
@@ -150,19 +148,19 @@ namespace FTP
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(96, 155);
+            this.label4.Location = new System.Drawing.Point(26, 155);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 15);
+            this.label4.Size = new System.Drawing.Size(106, 15);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Path :";
+            this.label4.Text = "업로드 폴더 경로 :";
             // 
             // btnUpload
             // 
             this.btnUpload.Location = new System.Drawing.Point(407, 188);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(75, 23);
+            this.btnUpload.Size = new System.Drawing.Size(91, 31);
             this.btnUpload.TabIndex = 11;
-            this.btnUpload.Text = "Upload";
+            this.btnUpload.Text = "서버에 업로드";
             this.btnUpload.UseVisualStyleBackColor = true;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
@@ -187,7 +185,7 @@ namespace FTP
             this.FilesinPro.Name = "FilesinPro";
             this.FilesinPro.Size = new System.Drawing.Size(542, 19);
             this.FilesinPro.TabIndex = 13;
-            this.FilesinPro.Text = "Waiting...";
+            this.FilesinPro.Text = "업로드 대기중 ...";
             this.FilesinPro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1

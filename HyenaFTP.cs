@@ -25,7 +25,7 @@ namespace FTP
         private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             var folderPath = txtPath.Text;
-            using (var ftp = new FtpClient(txtServer.Text, txtUserName.Text, txtPassword.Text))
+            using (var ftp = new FtpClient("192.10.10.227", txtUserName.Text, txtPassword.Text))
             {
                 ftp.Connect();
                 Action<FtpProgress> pro = new Action<FtpProgress> (s=> 
@@ -61,7 +61,7 @@ namespace FTP
 
         private void backgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            IblStatus.Text = "Upload Complete !";
+            IblStatus.Text = "업로드가 완료되었습니다. Hyena페이지에서 FTP APPLY 버튼을 클릭하면 적용됩니다.";
         }
 
 
