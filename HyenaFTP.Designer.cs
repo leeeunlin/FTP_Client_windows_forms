@@ -64,10 +64,10 @@ namespace FTP
             // 
             this.txtServer.Location = new System.Drawing.Point(140, 41);
             this.txtServer.Name = "txtServer";
-            this.txtServer.ReadOnly = true;
+            // this.txtServer.ReadOnly = true; // 글상자 비활성화
             this.txtServer.Size = new System.Drawing.Size(256, 23);
             this.txtServer.TabIndex = 1;
-            this.txtServer.Text = "Hyena FTP Server";
+            this.txtServer.Text = ""; // 여기에 작성된 ip 혹은 도메인 주소로 전송됨
             // 
             // selectPath
             // 

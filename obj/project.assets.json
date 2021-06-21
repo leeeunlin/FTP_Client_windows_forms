@@ -3382,11 +3382,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\hyena_FTP\\FTP.csproj",
+      "projectUniqueName": "D:\\FTPWINFORM\\FTP.csproj",
       "projectName": "FTP",
-      "projectPath": "D:\\hyena_FTP\\FTP.csproj",
+      "projectPath": "D:\\FTPWINFORM\\FTP.csproj",
       "packagesPath": "C:\\Users\\HM\\.nuget\\packages\\",
-      "outputPath": "D:\\hyena_FTP\\obj\\",
+      "outputPath": "D:\\FTPWINFORM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3438,7 +3438,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

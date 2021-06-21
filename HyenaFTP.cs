@@ -25,7 +25,7 @@ namespace FTP
         private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             var folderPath = txtPath.Text;
-            using (var ftp = new FtpClient("192.10.10.227", txtUserName.Text, txtPassword.Text))
+            using (var ftp = new FtpClient(txtServer.Text, txtUserName.Text, txtPassword.Text)) // ftp 서버 아이피, 생성될 폴더명(계정명), ftp 비밀번호
             {
                 ftp.Connect();
                 Action<FtpProgress> pro = new Action<FtpProgress> (s=> 
