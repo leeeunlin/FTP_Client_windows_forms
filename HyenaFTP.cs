@@ -44,11 +44,13 @@ namespace FTP
         }
         private void AllbackgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-
-            FilesinPro.Text = $"{e.ProgressPercentage} of {e.UserState} files in progress";
-            AllprogressBar.Maximum = ((int)e.UserState);
-            AllprogressBar.Value = e.ProgressPercentage;
-            AllprogressBar.Update();
+            this.Invoke(new Action(delegate ()
+            {
+                FilesinPro.Text = $"{e.ProgressPercentage} of {e.UserState} files in progress";
+                AllprogressBar.Maximum = ((int)e.UserState);
+                AllprogressBar.Value = e.ProgressPercentage;
+                AllprogressBar.Update();
+            }));
         }
         private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
@@ -81,6 +83,21 @@ namespace FTP
         }
 
         private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AllprogressBar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPath_TextChanged(object sender, EventArgs e)
         {
 
         }
