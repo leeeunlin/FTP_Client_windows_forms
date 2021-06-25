@@ -28,17 +28,22 @@ namespace FTP
             using (var ftp = new FtpClient(txtServer.Text, txtUserName.Text, txtPassword.Text)) // ftp 서버 아이피, 생성될 폴더명(계정명), ftp 비밀번호
             {
                 ftp.Connect();
-                Action<FtpProgress> pro = new Action<FtpProgress> (s=> 
-                {
+                Action<FtpProgress> pro = new Action<FtpProgress>(s =>
+               {
 
-                    AllbackgroundWorker.ReportProgress((int)s.FileIndex + 1, (int)s.FileCount);
+                   AllbackgroundWorker.ReportProgress((int)s.FileIndex + 1, (int)s.FileCount);
 
-                    backgroundWorker.ReportProgress((int)s.Progress, s.LocalPath);
+                   backgroundWorker.ReportProgress((int)s.Progress, s.LocalPath);
+               }); // 전체 파일수를 카운트하여 하나의 파일이 전송 완료될때마다 1씩 증가하는 ProgressBar
 
-
-                });
 
                 ftp.UploadDirectory(folderPath, @"\" + txtUserName.Text, FtpFolderSyncMode.Update, FtpRemoteExists.Skip, FtpVerify.None, null, pro);
+
+                DirectoryInfo di = new DirectoryInfo(folderPath);
+                foreach (FileInfo file in di.GetFiles("*", SearchOption.AllDirectories)) // 재귀함수로 각각의 폴더를 전부 들어가는것 보다 검색옵션으로 리스트만 추출하는게 속도가 더 빠름
+                {
+                    ftp.SetModifiedTime(txtUserName.Text + Convert.ToString(file).Replace(folderPath, ""), file.LastWriteTime); // 클라이언트 측의 경로를 서버 경로로 재 가공
+                }
 
             }
         }
@@ -63,7 +68,8 @@ namespace FTP
 
         private void backgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            IblStatus.Text = "업로드가 완료되었습니다. Hyena페이지에서 FTP APPLY 버튼을 클릭하면 적용됩니다.";
+
+            IblStatus.Text = "업로드가 완료되었습니다. HYENA 페이지에서 파일 등록 버튼을 클릭하면 적용됩니다.";
         }
 
 

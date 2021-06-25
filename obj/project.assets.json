@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "FluentFTP/33.0.3": {
+      "FluentFTP/34.0.0": {
         "type": "package",
         "dependencies": {
           "System.Console": "4.3.0",
@@ -936,15 +936,15 @@
     }
   },
   "libraries": {
-    "FluentFTP/33.0.3": {
-      "sha512": "kKjSRMhfpnjhPLHm7tEyCr7wxqbLVziyx2mxEcxbrRzUw23LCvEZYmktE/1NJU8yTemTcHyGAgH27q8hJN+tSw==",
+    "FluentFTP/34.0.0": {
+      "sha512": "uw92f2gZz11xEr67HlS5rs9oYeLY/rx+mOFgPdDYDh7Je9/Za7OfnS0D0niNxaoIMWw1VEPsI8bPn65lIv68JQ==",
       "type": "package",
-      "path": "fluentftp/33.0.3",
+      "path": "fluentftp/34.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
-        "fluentftp.33.0.3.nupkg.sha512",
+        "fluentftp.34.0.0.nupkg.sha512",
         "fluentftp.nuspec",
         "lib/net20/FluentFTP.dll",
         "lib/net20/FluentFTP.xml",
@@ -954,6 +954,8 @@
         "lib/net40/FluentFTP.xml",
         "lib/net45/FluentFTP.dll",
         "lib/net45/FluentFTP.xml",
+        "lib/net5.0/FluentFTP.dll",
+        "lib/net5.0/FluentFTP.xml",
         "lib/netstandard1.4/FluentFTP.dll",
         "lib/netstandard1.4/FluentFTP.xml",
         "lib/netstandard1.6/FluentFTP.dll",
@@ -3373,7 +3375,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "FluentFTP >= 33.0.3"
+      "FluentFTP >= 34.0.0"
     ]
   },
   "packageFolders": {
@@ -3417,7 +3419,7 @@
         "dependencies": {
           "FluentFTP": {
             "target": "Package",
-            "version": "[33.0.3, )"
+            "version": "[34.0.0, )"
           }
         },
         "imports": [

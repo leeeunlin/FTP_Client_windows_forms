@@ -42,7 +42,7 @@
           "dependencies": {
             "FluentFTP": {
               "target": "Package",
-              "version": "[33.0.3, )"
+              "version": "[34.0.0, )"
             }
           },
           "imports": [

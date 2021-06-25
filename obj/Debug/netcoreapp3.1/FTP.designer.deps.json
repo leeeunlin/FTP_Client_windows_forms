@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "FluentFTP/33.0.3": {
+      "FluentFTP/34.0.0": {
         "dependencies": {
           "System.Console": "4.3.0",
           "System.IO": "4.3.0",
@@ -19,8 +19,8 @@
         },
         "runtime": {
           "lib/netstandard2.1/FluentFTP.dll": {
-            "assemblyVersion": "33.0.3.0",
-            "fileVersion": "33.0.3.0"
+            "assemblyVersion": "34.0.0.0",
+            "fileVersion": "34.0.0.0"
           }
         }
       },
@@ -801,12 +801,12 @@
     }
   },
   "libraries": {
-    "FluentFTP/33.0.3": {
+    "FluentFTP/34.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kKjSRMhfpnjhPLHm7tEyCr7wxqbLVziyx2mxEcxbrRzUw23LCvEZYmktE/1NJU8yTemTcHyGAgH27q8hJN+tSw==",
-      "path": "fluentftp/33.0.3",
-      "hashPath": "fluentftp.33.0.3.nupkg.sha512"
+      "sha512": "sha512-uw92f2gZz11xEr67HlS5rs9oYeLY/rx+mOFgPdDYDh7Je9/Za7OfnS0D0niNxaoIMWw1VEPsI8bPn65lIv68JQ==",
+      "path": "fluentftp/34.0.0",
+      "hashPath": "fluentftp.34.0.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
