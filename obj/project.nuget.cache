@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZVMQVaxcr881ds/zfB+wEhsjAtA4T5wqKQRIlSGY8usHz5VMStSWBjzNSV043N3U5AOnjRwbnFrfbgBHRKmwOA==",
+  "dgSpecHash": "gj33szFhQoZh7cboVXCviVCbygCqsCMF9PkiVFGK719wb2ejYZglypf0q6x4bo5g7dKxWHb38mpnUj+K2Ucg3w==",
   "success": true,
-  "projectFilePath": "D:\\FTPWINFORM\\FTP.csproj",
+  "projectFilePath": "D:\\FTP_Client_windows_forms\\FTP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HM\\.nuget\\packages\\fluentftp\\34.0.0\\fluentftp.34.0.0.nupkg.sha512",
     "C:\\Users\\HM\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

@@ -3384,11 +3384,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FTPWINFORM\\FTP.csproj",
+      "projectUniqueName": "D:\\FTP_Client_windows_forms\\FTP.csproj",
       "projectName": "FTP",
-      "projectPath": "D:\\FTPWINFORM\\FTP.csproj",
+      "projectPath": "D:\\FTP_Client_windows_forms\\FTP.csproj",
       "packagesPath": "C:\\Users\\HM\\.nuget\\packages\\",
-      "outputPath": "D:\\FTPWINFORM\\obj\\",
+      "outputPath": "D:\\FTP_Client_windows_forms\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HM\\AppData\\Roaming\\NuGet\\NuGet.Config",
