@@ -30,19 +30,20 @@ namespace FTP
                 ftp.Connect();
                 Action<FtpProgress> pro = new Action<FtpProgress>(s =>
                {
-
-                   AllbackgroundWorker.ReportProgress((int)s.FileIndex + 1, (int)s.FileCount);
-
-                   backgroundWorker.ReportProgress((int)s.Progress, s.LocalPath);
+                   AllbackgroundWorker.ReportProgress((int)s.FileIndex + 1, (int)s.FileCount); // 전체 파일 수 카운트
+                   backgroundWorker.ReportProgress((int)s.Progress, s.LocalPath); // 파일 전송에 따른 프로그래스바
                }); // 전체 파일수를 카운트하여 하나의 파일이 전송 완료될때마다 1씩 증가하는 ProgressBar
 
 
-                ftp.UploadDirectory(folderPath, @"\" + txtUserName.Text, FtpFolderSyncMode.Update, FtpRemoteExists.Skip, FtpVerify.None, null, pro);
+                ftp.UploadDirectory(folderPath, @"\" + txtUserName.Text, FtpFolderSyncMode.Update, FtpRemoteExists.Skip, FtpVerify.None, null, pro); // 업로드 및 프로그래스바 업데이트
 
+                // 업로드 후 클라이언트의 시간을 읽어 업로드된 서버의 수정시간을 변경하는 코드
                 DirectoryInfo di = new DirectoryInfo(folderPath);
                 foreach (FileInfo file in di.GetFiles("*", SearchOption.AllDirectories)) // 재귀함수로 각각의 폴더를 전부 들어가는것 보다 검색옵션으로 리스트만 추출하는게 속도가 더 빠름
                 {
-                    ftp.SetModifiedTime(txtUserName.Text + Convert.ToString(file).Replace(folderPath, ""), file.LastWriteTime); // 클라이언트 측의 경로를 서버 경로로 재 가공
+                    // 주의 : 서버가 MFMT 지원해야함
+                    ftp.SetModifiedTime(txtUserName.Text + Convert.ToString(file).Replace(folderPath, ""), file.LastWriteTime); // 클라이언트 측의 경로를 서버 경로로 재 가공 및 LastWriteTime 변경 진행
+                    // ftp.Execute("MFCT " + 생성날짜 + 파일경로) // MFCT도 지원할 경우 생성일자도 변경 가능
                 }
 
             }
