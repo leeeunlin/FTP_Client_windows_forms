@@ -69,7 +69,7 @@ namespace FTP
         private void backgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
 
-            IblStatus.Text = "업로드가 완료되었습니다. HYENA 페이지에서 파일 등록 버튼을 클릭하면 적용됩니다.";
+            IblStatus.Text = "업로드가 완료되었습니다.";
         }
 
 
