@@ -56,6 +56,7 @@ D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\FTP.runtimeconfig.dev.json
 D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\FTP.dll
 D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\FTP.pdb
 D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\FluentFTP.dll
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\FTP.csproj.AssemblyReference.cache
 D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\FTP.HyenaFTP.resources
 D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\FTP.csproj.GenerateResource.cache
 D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\FTP.AssemblyInfoInputs.cache

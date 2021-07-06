@@ -27,7 +27,7 @@ namespace FTP
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private async void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtServer = new System.Windows.Forms.TextBox();
@@ -46,6 +46,7 @@ namespace FTP
             this.AllbackgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.FilesinPro = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btncancel = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,10 +65,9 @@ namespace FTP
             // 
             this.txtServer.Location = new System.Drawing.Point(140, 41);
             this.txtServer.Name = "txtServer";
-            // this.txtServer.ReadOnly = true; // 글상자 비활성화
             this.txtServer.Size = new System.Drawing.Size(256, 23);
             this.txtServer.TabIndex = 1;
-            this.txtServer.Text = ""; // 여기에 작성된 ip 혹은 도메인 주소로 전송됨
+            this.txtServer.Text = "192.10.10.227";
             // 
             // selectPath
             // 
@@ -92,7 +92,7 @@ namespace FTP
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(256, 23);
             this.txtUserName.TabIndex = 2;
-            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
+            this.txtUserName.Text = "abcde";
             // 
             // txtPassword
             // 
@@ -101,6 +101,7 @@ namespace FTP
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(256, 23);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.Text = "abcde12345";
             // 
             // label3
             // 
@@ -196,6 +197,17 @@ namespace FTP
             this.panel1.Size = new System.Drawing.Size(542, 19);
             this.panel1.TabIndex = 15;
             // 
+            // btncancel
+            // 
+            this.btncancel.Location = new System.Drawing.Point(504, 188);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(50, 31);
+            this.btncancel.TabIndex = 17;
+            this.btncancel.Text = "취소";
+            this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Visible = false;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.IblStatus);
@@ -209,6 +221,7 @@ namespace FTP
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 280);
+            this.Controls.Add(this.btncancel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.AllprogressBar);
@@ -241,7 +254,6 @@ namespace FTP
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label3;
-        private System.ComponentModel.BackgroundWorker backgroundWorker;
         private System.Windows.Forms.Label IblStatus;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPath;
@@ -252,6 +264,8 @@ namespace FTP
         private System.Windows.Forms.Label FilesinPro;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btncancel;
+        private System.ComponentModel.BackgroundWorker backgroundWorker;
     }
 }
 

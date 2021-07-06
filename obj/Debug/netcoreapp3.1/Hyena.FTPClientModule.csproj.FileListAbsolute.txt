@@ -1,0 +1,17 @@
+D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\Hyena.FTPClientModule.exe
+D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\Hyena.FTPClientModule.deps.json
+D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\Hyena.FTPClientModule.runtimeconfig.json
+D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\Hyena.FTPClientModule.runtimeconfig.dev.json
+D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\Hyena.FTPClientModule.dll
+D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\Hyena.FTPClientModule.pdb
+D:\FTP_Client_windows_forms\bin\Debug\netcoreapp3.1\FluentFTP.dll
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\Hyena.FTPClientModule.csproj.AssemblyReference.cache
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\FTP.HyenaFTP.resources
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\Hyena.FTPClientModule.csproj.GenerateResource.cache
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\Hyena.FTPClientModule.AssemblyInfoInputs.cache
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\Hyena.FTPClientModule.AssemblyInfo.cs
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\Hyena.FTPClientModule.csproj.CoreCompileInputs.cache
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\Hyena.FTPClientModule.csproj.CopyComplete
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\Hyena.FTPClientModule.dll
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\Hyena.FTPClientModule.pdb
+D:\FTP_Client_windows_forms\obj\Debug\netcoreapp3.1\Hyena.FTPClientModule.genruntimeconfig.cache
