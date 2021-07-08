@@ -67,7 +67,6 @@ namespace FTP
             this.txtServer.Name = "txtServer";
             this.txtServer.Size = new System.Drawing.Size(256, 23);
             this.txtServer.TabIndex = 1;
-            this.txtServer.Text = "192.10.10.227";
             // 
             // selectPath
             // 
@@ -92,7 +91,6 @@ namespace FTP
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(256, 23);
             this.txtUserName.TabIndex = 2;
-            this.txtUserName.Text = "abcde";
             // 
             // txtPassword
             // 
@@ -101,7 +99,6 @@ namespace FTP
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(256, 23);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "abcde12345";
             // 
             // label3
             // 
