@@ -7,3 +7,5 @@ FTP winform modul
 
 
 FileZilla Server로 테스트 진행하였으며 IIS의 경우 수정시간 변경 불가 (윈도우정책)
+
+https://ncvr.kdca.go.kr/cobk/rsrv/web/getVcnRsrvRgstChc.do
