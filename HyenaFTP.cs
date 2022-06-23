@@ -35,15 +35,22 @@ namespace FTP
                 ftp.Connect();
                 Action<FtpProgress> pro = new Action<FtpProgress>(s =>
                {
-                   AllbackgroundWorker.ReportProgress(s.FileIndex + 1, s.FileCount); // 전체 파일 수 카운트
+                   AllbackgroundWorker.ReportProgress(s.FileIndex + 1, s.FileCount); // 전체 파일 수 카운트 / 아래 backgroundwork가 끝날때마다 1씩 증가됨
                    backgroundWorker.ReportProgress((int)s.Progress, s.LocalPath); // 파일 전송에 따른 프로그래스바
                    if (backgroundWorker.CancellationPending)
                    {
-                       ftp.Dispose();
+                       ftp.Execute("ABOR"); // FileZilla Server에 ABOR 명령어 전달 (현재 전송중인 파일'만' 전송 중단)
+                       ftp.Disconnect(); // 폴더 업로드 시 리스트에 있는 파일 추가 전송을 막기위한 접속종료
+
+                       ftp.Connect(); // 전송 cancel시 파일 삭제하기위한 재접속
+                       foreach (var item in ftp.GetListing(@"\" + txtUserName.Text, FtpListOption.AllFiles)) // 삭제하기 위한 foreach 서버내에 읽,쓰,삭 권한이 있어야 작동함
+                       {
+                           ftp.Execute("DELE " + item.FullName); // item에 들어있는 모든 파일명에 DELE명령어를 추가하여 삭제 진행
+                       }
+                       ftp.DeleteDirectory(@"\" + txtUserName.Text); // 메인 폴더 삭제
                    }
-               }); // 전체 파일수를 카운트하여 하나의 파일이 전송 완료될때마다 1씩 증가하는 ProgressBar
+               });
                 ftp.UploadDirectory(folderPath, @"\" + txtUserName.Text, FtpFolderSyncMode.Update, FtpRemoteExists.Skip, FtpVerify.None, null, pro); // 업로드 및 프로그래스바 업데이트
-                                                                                                                                                     //await ftp.UploadDirectoryAsync(folderPath, @"\" + txtUserName.Text, FtpFolderSyncMode.Update, FtpRemoteExists.Skip, FtpVerify.None, null, pro, token);
 
                 // 업로드 후 클라이언트의 시간을 읽어 업로드된 서버의 수정시간을 변경하는 코드
                 if (!(backgroundWorker.CancellationPending))
@@ -58,7 +65,7 @@ namespace FTP
 
                 else
                 {
-                    e.Cancel = true;
+
                     return;
                 }
 
@@ -78,6 +85,7 @@ namespace FTP
                 else
                 {
                     AllprogressBar.Value = 0;
+                    IblStatus.Text = "업로드 작업을 취소하고 있습니다.";
                     return;
                 }
             }));
@@ -100,10 +108,9 @@ namespace FTP
 
         private void backgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-
-            IblStatus.Text = "업로드가 완료되었습니다.";
+            IblStatus.Text = "작업이 완료되었습니다.";
             btncancel.Visible = true;
-            btnUpload.Enabled = false;
+            btnUpload.Enabled = true;
         }
 
 
@@ -136,7 +143,7 @@ namespace FTP
             AllbackgroundWorker.CancelAsync();
             btncancel.Visible = false;
             btnUpload.Enabled = true;
-            IblStatus.Text = "업로드 작업이 취소되었습니다.";
+
 
         }
     }
